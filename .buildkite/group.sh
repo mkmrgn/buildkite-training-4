@@ -13,5 +13,7 @@ do
   cat <<YAML
             - label: "$i"
               command: echo "hello $name"
+              agents:
+                queue: "aws"
 YAML
 done
