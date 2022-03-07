@@ -1,5 +1,5 @@
 agents:
-  queue: aws
+  queue: "aws"
 
 steps:
   - command: "echo 'This is job $$BUILDKITE_PARALLEL_JOB'"
