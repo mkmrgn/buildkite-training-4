@@ -1,4 +1,6 @@
 steps:
-  - command: "echo $$BUILDKITE_PARALLEL_JOB"
+  - commands: 
+    - "echo Total parallel jobs: $$BUILDKITE_PARALLEL_JOB_COUNT"
+    - "echo This job's index number: $$BUILDKITE_PARALLEL_JOB"
     label: "Parallel job %n"
     parallelism: 5
